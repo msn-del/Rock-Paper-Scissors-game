@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="learn.css">
     <script src="learn.js"></script>
 
   </head>
-  <body>
+  <body onload="updateScoreDisplay()">
     <p>Rock Paper Scissors</p>
     <button onclick="
       playGame('rock');
@@ -21,6 +22,9 @@
     <button onclick="
         restscore();
     ">reset score</button>
+    <div id="game"></div>
+    <div id="result"></div>
+     <div id="score-display"></div>
 
   </body>
 </html>
